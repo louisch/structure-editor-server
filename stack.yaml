@@ -4,6 +4,7 @@
 # For advanced use and comprehensive documentation of the format, please see:
 # http://docs.haskellstack.org/en/stable/yaml_configuration/
 
+# Use stackage.org to find a resolver
 # Resolver to choose a 'specific' stackage snapshot or a compiler version.
 # A snapshot resolver dictates the compiler version and the set of packages
 # to be used for project dependencies. For example:
@@ -15,7 +16,9 @@
 # resolver:
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
-resolver: lts-7.5
+#resolver: ghc-8.0.2
+#resolver: nightly-2017-01-17
+resolver: lts-8.1
 
 # compiler: ghcjs-0.2.1.9007005_ghc-8.0.1
 # compiler-check: match-exact

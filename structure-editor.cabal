@@ -16,8 +16,12 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Lib
+  other-modules:       AST
   build-depends:       base >= 4.7 && < 5
                      , haskell-src >= 1.0.2.0
+                     , websockets >= 0.10.0.0
+                     , text >= 1.2.2.1
+                     , aeson >= 1.0.2.1
   default-language:    Haskell2010
 
 executable structure-editor-exe
@@ -26,6 +30,9 @@ executable structure-editor-exe
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
                      , structure-editor
+                     , websockets >= 0.10.0.0
+                     , text >= 1.2.2.1
+                     , aeson >= 1.0.2.1
   default-language:    Haskell2010
 
 test-suite structure-editor-test
